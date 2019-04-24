@@ -1,0 +1,18 @@
+---
+- hosts: win
+  gather_facts: yes
+  tasks:
+    - name: install Chocolatey
+      win_chocolatey:
+        name: chocolatey
+        state: present
+
+    - name: disable enhanced exit codes
+      win_chocolatey_feature:
+        name: useEnhancedExitCodes
+        state: disabled
+
+    - name: install notepadplusplus
+      win_chocolatey:
+        name: notepadplusplus
+        state: present

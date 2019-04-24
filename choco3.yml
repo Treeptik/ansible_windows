@@ -1,0 +1,14 @@
+---
+- hosts: win
+  gather_facts: yes
+  tasks:
+    - name: install mysql
+      win_chocolatey:
+        name: mysql
+        version: "5.7.17"
+        state: present
+    - name: install tomcat
+      win_chocolatey:
+        name: tomcat
+        version: "7.0.69"
+        state: present
