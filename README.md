@@ -1,6 +1,6 @@
 # ansible_windows
 
-Cette configuration est un exemple pour pouvoir manipuler des machines windows via ansible .
+Cette configuration est un exemple pour pouvoir manipuler des machines Windows via ansible .
 
 Une fois ansible installer, il vous suffit de cloner le repositories git.
 
@@ -12,7 +12,8 @@ Le 2e playbook (choco3.yml) va installer tomcat et mysql
 
 la configuration du fichier fonctionnne seulement pour des machines Windows : 
 
-nous avons spécifier l'ip de la machine dans un groupe win, nous avons spécifier plusieurs variables ,
+nous avons spécifié l'ip de la machine dans un groupe win, nous avons spécifié plusieurs variables dans le fichier hosts : 
+
  - ansible_user : l'utilisateur avec lequelle ansible va se connecter a la machine
  - ansible_password : le mot de passe de l'utilisateur
  - ansible_connection : le type de connection que windows utilise (ici WinRM)
