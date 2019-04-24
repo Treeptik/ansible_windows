@@ -9,9 +9,9 @@ le Repo présente 2 playbooks ansible et une configuration spécifique du fichie
 
 # Playbook
 
-Le 1er playbook (install_choco.yml) va permettre d'installer chocolatey qui le gestionnaire de paquets pour Windows, il va nous permettre par la suite d'installer Tomcat,mysql etc ..
+Le 1er playbook (install_choco.yml) va permettre d'installer chocolatey qui est le gestionnaire de paquets pour Windows, il va nous permettre par la suite d'installer Tomcat,mysql etc ..
 
-Le 2e playbook (choco3.yml) va installer tomcat et mysql
+Le 2e playbook (choco3.yml) va installer tomcat et mysql 
 
 
 # hosts
